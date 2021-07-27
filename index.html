@@ -5,110 +5,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Card</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kristi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Kristi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Give+You+Glory&family=Kristi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
-    <title>Menu Card</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            text-align: center;
+            box-sizing: content-box;
+            border-collapse: separate;
+            margin-left: 10%;
+            margin-top: 5%;
+            display: flex;
+        }
+        
+        .col-lg-4 {
+            border-collapse: separate;
+            border: 20px solid #f1d359;
+            margin-left: 15px;
+            margin-right: 15px;
+            width: fit-content;
+            height: fit-content;
+            margin-bottom: 10px;
+        }
+        
         body {
-            background-color: #154360;
+            background-color: #EEEEEE;
         }
         
         .burger {
-            width: 350px;
+            width: 300px;
             padding: 10px;
-            border: 23px solid #F08080;
-            height: 190px;
-            margin-left: 2cm;
-            font-size: 0.7cm;
-            color: white;
+            height: fit-content;
+            font-size: 0.55cm;
         }
         
         .burger :hover {
-            background-color: #2E86C1;
-        }
-        
-        .c11 :hover {
-            transform: scale(1.02);
+            background-color: #00C1D4;
         }
         
         .momos {
             width: 300px;
             padding: 10px;
-            border: 23px solid #F08080;
-            height: 190px;
-            margin-left: 2cm;
-            font-size: 0.7cm;
-            color: white;
+            height: fit-content;
+            font-size: 0.55cm;
         }
         
         .momos :hover {
-            background-color: #2E86C1;
-        }
-        
-        .c12 :hover {
-            transform: scale(1.02);
+            background-color: #00C1D4;
         }
         
         .fries {
             width: 300px;
             padding: 10px;
-            border: 23px solid #F08080;
-            height: 190px;
-            margin-left: 2cm;
-            font-size: 0.7cm;
-            color: white;
+            height: fit-content;
+            font-size: 0.55cm;
         }
         
         .fries :hover {
-            background-color: #2E86C1;
-        }
-        
-        .c21 :hover {
-            transform: scale(1.02);
+            background-color: #00C1D4;
         }
         
         .indo {
             width: 300px;
             padding: 10px;
-            border: 23px solid #F08080;
-            height: auto;
-            margin-left: 2cm;
-            font-size: 0.7cm;
-            color: white;
+            height: fit-content;
+            font-size: 0.55cm;
         }
         
         .indo :hover {
-            background-color: #2E86C1;
+            background-color: #00C1D4;
         }
         
         .coffee {
-            width: 350px;
+            width: 300px;
             padding: 10px;
-            border: 23px solid #F08080;
-            height: auto;
-            margin-left: 2cm;
-            font-size: 0.7cm;
-            color: white;
+            height: fit-content;
+            font-size: 0.55cm;
         }
         
         .coffee :hover {
-            background-color: #2E86C1;
-        }
-        
-        .c22 :hover {
-            transform: scale(1.02);
-        }
-        
-        .c31 :hover {
-            transform: scale(1.02);
-        }
-        
-        .c32 :hover {
-            transform: scale(1.02);
+            background-color: #00C1D4;
         }
         
         .header {
@@ -118,8 +104,8 @@
         .name {
             text-align: center;
             font-family: 'Kristi', cursive;
-            font-size: 9rem;
-            color: IndianRed;
+            font-size: 15rem;
+            color: #512D6D;
             text-decoration: IndianRed underline;
             text-decoration-style: wavy;
         }
@@ -127,34 +113,27 @@
         .tagline {
             font-family: 'Aladin', cursive;
             text-align: center;
-            font-size: 2rem;
+            font-size: 5rem;
+            letter-spacing: 0.9rem;
             color: IndianRed;
+            transition: all .7s ease-in;
+            animation: first 5s infinite;
         }
         
         .line {
             border: 5px #E9967A solid;
             border-radius: 10cm;
-            width: 60%;
+            width: 99%;
             align-items: center;
-        }
-        
-        .menu {
-            text-align: center;
-            font-size: 80px;
-            font-family: 'Waiting for the Sunrise', cursive;
-            color: DarkSalmon;
-            text-decoration: DarkSalmon underline;
-            text-decoration-style: wavy;
-            text-decoration-thickness: 0.5cm;
         }
         
         h2 {
             text-align: center;
-            font-size: 3rem;
-            color: #F08080;
+            font-size: 5rem;
+            color: #F8485E;
             font-family: 'Give You Glory', cursive;
             margin-right: 1cm;
-            text-decoration: #F08080 underline;
+            text-decoration: #F8485E underline;
             text-decoration-style: wavy;
         }
         
@@ -162,18 +141,12 @@
             transform: scale(1.5);
         }
         
-        h3 {
-            margin-left: 10px;
-            margin-top: 2px;
-            margin-bottom: 2px;
-        }
-        
         a :hover {
             color: white;
         }
         
         .details {
-            background-color: #F08080;
+            background-color: #726e5f;
             font-size: 0.8cm;
             width: 1500px;
             margin-left: 0cm;
@@ -188,12 +161,15 @@
             color: black;
         }
         
-        .c1 {
-            display: flex;
+        .col:hover {
+            border-radius: 10%;
+            transform: scale(1.1);
+            transition-duration: 1s;
         }
         
-        .c2 {
-            display: flex;
+        li:hover {
+            transform: scale(1.1);
+            transition-duration: 1s;
         }
         
         .item {
@@ -205,26 +181,58 @@
         }
         
         .nav {
-            width: 15%;
-            background-color: #F08080;
-            height: 1cm;
-            margin: auto;
+            width: 100%;
+            background-color: IndianRed;
+            height: 1.5cm;
             color: black;
             font-family: 'Aladin', cursive;
             text-align: center;
-            font-size: 2rem;
+            font-size: 3rem;
             border-radius: 50px;
+            padding-left: 300px;
+            padding-top: 10px;
+            position: sticky;
         }
         
-        a:visited {
+        .nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        
+        .nav ul li {
+            padding-left: 150px;
+        }
+        
+        .nav li a:visited {
             color: black;
             text-decoration: solid;
             cursor: grab;
         }
         
+        a {
+            text-decoration-style: none;
+            color: black;
+        }
+        
+        a:hover {
+            color: black;
+        }
+        
         a:link:active,
         a:visited:active {
             color: black;
+        }
+        
+        @keyframes first {
+            0% {
+                letter-spacing: 0.09rem;
+            }
+            50% {
+                letter-spacing: 1.2rem;
+            }
+            100% {
+                letter-spacing: 0.09rem;
+            }
         }
     </style>
 </head>
@@ -233,147 +241,155 @@
     <div class="header">
         <div class="name">Hipsters Café</div>
         <div class="tagline">Count Memories, Not Calories😋</div>
-
     </div>
     <hr class="line ">
     <br>
     <div class="nav">
-        <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="offers.html">Offers</a>
+        <ul>
+            <li>
+                <a href="index.html">Menu Card</a>
+            </li>
+            <li>
+                <a href="offers.html">Offers and Deals</a>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+        </ul>
     </div>
-    <div class="menu">Menu Card</div>
-    <div class="c1">
-        <div class=" c11 ">
+    <div class=" container ">
+        <div class="row ">
+            <div class="col col-lg-4 col-xs-12 col-md-4 col-sm-4 ">
+                <div class=" c11 ">
 
-            <h2 class="head">Burger</h2>
-            <table align="center ">
-                <tr>
-                    <td>
-                        <ul class="burger ">
-                            <li><span class="item">Aloo Patty Burger &nbsp;&nbsp;</span><span class="rate">110/-</span></li>
-                            <li><span class="item">Veg Mayo Burger&nbsp;&nbsp;</span><span class="rate"> 130/-</span> </li>
-                            <li><span class="item">Paneer Burger &nbsp;&nbsp;</span><span class="rate">165/-</span>
-                            </li>
-                            <li><span class="item">Chicken Burger &nbsp;&nbsp;</span><span class="rate">175/-</span></li>
-                            <li><span class=" item ">Chicken Salami Burger &nbsp;&nbsp;</span><span class="rate">195/-</span></li>
-                            <li><span class=" item ">Mexican Patty Burger &nbsp;&nbsp;</span><span class="rate">150/-</span></li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="c12 ">
-            <h2 class="head">Momos</h2>
-            <table align="center ">
-                <tr>
-                    <td>
-                        <ul class="momos ">
-                            <li><span class="item ">Veg Momos</span><span class="rate "> 105/- </li>
+                    <h2 class="head ">Burger</h2>
+                    <table align="center ">
+                        <tr>
+                            <td>
+                                <ul class="burger ">
+                                    <li><span class="item ">Aloo Patty Burger &nbsp;&nbsp;</span><span class="rate ">110/-</span></li>
+                                    <li><span class="item ">Veg Mayo Burger&nbsp;&nbsp;</span><span class="rate "> 130/-</span> </li>
+                                    <li><span class="item ">Paneer Burger &nbsp;&nbsp;</span><span class="rate ">165/-</span>
+                                    </li>
+                                    <li><span class="item ">Chicken Burger &nbsp;&nbsp;</span><span class="rate ">175/-</span></li>
+                                    <li><span class=" item ">Chicken Salami Burger &nbsp;&nbsp;</span><span class="rate ">195/-</span></li>
+                                    <li><span class=" item ">Mexican Patty Burger &nbsp;&nbsp;</span><span class="rate ">150/-</span></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-xs-12 col-md-4 col-sm-4 ">
+                <div class="c11 ">
+                    <h2 class="head ">Momos</h2>
+                    <table align="center ">
+                        <tr>
+                            <td>
+                                <ul class="momos ">
+                                    <li><span class="item ">Veg Momos</span><span class="rate "> 105/- </li>
                             <li><span class=" item ">Soya Momos</span><span class="rate "> 105/-</li>
                             <li><span class="item ">Chicken Momos </span><span class="rate ">105/-</li>
                             <li><span class="item ">Fried Momos</span><span class="rate "> 125/-</span>
-                            </li>
-                            <li><span class=" item ">Gravy Momos</span><span class="rate "> 140/-</span></li>
-                            <li><span class="item ">Schezwan Momos</span><span class="rate "> 150/-</span></li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-
-        <div class="c21 ">
-            <h2 class="head">Fries</h2>
-            <table align="center ">
-                <tr>
-                    <td>
-                        <ul class="fries ">
-                            <li>
-                                <span class="item ">Salted
+                                    </li>
+                                    <li><span class=" item ">Gravy Momos</span><span class="rate "> 140/-</span></li>
+                                    <li><span class="item ">Schezwan Momos</span><span class="rate "> 150/-</span></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-xs-12 col-md-4 col-sm-4 ">
+                <div class="c11 ">
+                    <h2 class="head ">Fries</h2>
+                    <table align="center ">
+                        <tr>
+                            <td>
+                                <ul class="fries ">
+                                    <li>
+                                        <span class="item ">Salted
                                 </span>
-                                <span class="rate ">70/-</span>
-                            </li>
-                            <li><span class="item ">Peri-Peri</span><span class="rate "> 95/-</span></li>
-                            <li><span class="item ">Potato Wedges </span><span class="rate ">100/-</span></li>
-                            <li><span class="item ">Cheese Corn Balls</span><span class="rate ">160/-</span>
-                            </li>
-                            <li><span class="item ">Nachos </span><span class="rate ">180/-</span>
-                            </li>
-                            <li><span class="item ">Chicken Fingers </span><span class="rate ">180/-</span></li>
+                                        <span class="rate ">70/-</span>
+                                    </li>
+                                    <li><span class="item ">Peri-Peri</span><span class="rate "> 95/-</span></li>
+                                    <li><span class="item ">Potato Wedges </span><span class="rate ">100/-</span></li>
+                                    <li><span class="item ">Cheese Corn Balls</span><span class="rate ">160/-</span>
+                                    </li>
+                                    <li><span class="item ">Nachos </span><span class="rate ">180/-</span>
+                                    </li>
+                                    <li><span class="item ">Chicken Fingers </span><span class="rate ">180/-</span></li>
 
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="c2 ">
-        <div class="c22 ">
-            <h2 class="head">Indo-Chinese</h2>
-            <table align="center ">
-                <tr>
-                    <td>
-                        <ul class="indo ">
-                            <li><span class="item">Spring Rolls&nbsp;&nbsp;</span><span class="rate">130/-</span></li>
-                            <li><span class="item">Chowmein &nbsp;&nbsp;</span><span class="rate">150/-</span></li>
-                            <li><span class="item">Chau Chau &nbsp;&nbsp;</span><span class="rate">170/-</span></li>
-                            <li><span class="item">Chilly Potato &nbsp;&nbsp;</span><span class="rate">150/-</span></li>
-                            <li><span class="item">Chilly Paneer &nbsp;&nbsp;</span><span class="rate">180/-</span></li>
-                            <li><span class="item">Chilly Chicken &nbsp;&nbsp;</span><span class="rate">230/-</span></li>
+    <div class="container ">
+        <div class="row ">
+            <div class="col col-lg-4 col-xs-12 col-md-4 col-sm-4 ">
+                <div class="c11 ">
+                    <h2 class="head ">Indo-Chinese</h2>
+                    <table align="center ">
+                        <tr>
+                            <td>
+                                <ul class="indo ">
+                                    <li><span class="item ">Spring Rolls&nbsp;&nbsp;</span><span class="rate ">130/-</span></li>
+                                    <li><span class="item ">Chowmein &nbsp;&nbsp;</span><span class="rate ">150/-</span></li>
+                                    <li><span class="item ">Chau Chau &nbsp;&nbsp;</span><span class="rate ">170/-</span></li>
+                                    <li><span class="item ">Chilly Potato &nbsp;&nbsp;</span><span class="rate ">150/-</span></li>
+                                    <li><span class="item ">Chilly Paneer &nbsp;&nbsp;</span><span class="rate ">180/-</span></li>
+                                    <li><span class="item ">Chilly Chicken &nbsp;&nbsp;</span><span class="rate ">230/-</span></li>
 
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="c31 ">
-            <h2 class="head">Frappe</h2>
-            <table align="center ">
-                <tr>
-                    <td>
-                        <ul class="indo ">
-                            <li><span class="item">Chocolate Oreo</span><span class="rate"> 150/-</span></li>
-                            <li><span class="item">Kit-Kat Shake</span><span class="rate">150/-</span></li>
-                            <li><span class=" item ">Brownie Shake </span><span class="rate">200/-</span></li>
-                            <li><span class="item ">Virgin Mojito </span><span class="rate">100/-</span></li>
-                            <li><span class="item ">Kiwi Mojito </span><span class="rate">100/-</span></li>
-                            <li><span class="item ">Cola Mojito </span><span class="rate">100/-</span></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-xs-12 col-md-4 col-sm-4 ">
+                <div class="c11 ">
+                    <h2 class="head ">Frappe</h2>
+                    <table align="center ">
+                        <tr>
+                            <td>
+                                <ul class="indo ">
+                                    <li><span class="item ">Chocolate Oreo</span><span class="rate "> 150/-</span></li>
+                                    <li><span class="item ">Kit-Kat Shake</span><span class="rate ">150/-</span></li>
+                                    <li><span class=" item ">Brownie Shake </span><span class="rate ">200/-</span></li>
+                                    <li><span class="item ">Virgin Mojito </span><span class="rate ">100/-</span></li>
+                                    <li><span class="item ">Kiwi Mojito </span><span class="rate ">100/-</span></li>
+                                    <li><span class="item ">Cola Mojito </span><span class="rate ">100/-</span></li>
 
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="c11 ">
-            <h2 class="head">Coffee </h2>
-            <table align="center ">
-                <tr>
-                    <td>
-                        <ul class="coffee ">
-                            <li><span class="item ">Americano </span><span class="rate">110/-</span></li>
-                            <li><span class="item ">Cappucino </span><span class="rate">120/-</span></li>
-                            <li><span class="item ">Espresso </span><span class="rate">100/-</span></li>
-                            <li><span class="item ">Cafe Macchiato </span><span class="rate">150/-</span></li>
-                            <li><span class="item ">Cold Brew Coffee </span><span class="rate">250/-</span></li>
-                            <li><span class="item ">Latte </span><span class="rate">100/-</span></li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="details ">
-        <h3>
-            <div class="ig ">Contact us <i class="fa fa-phone ">
-            </i> : +91-9650619216 &nbsp;</div>
-            <div class="ig ">
-                Or Email us at :
-                <a href="mailto:2020kucp1051@iiitkota.ac.in "><i class= "fa fa-google-plus "></i></a>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div class="ig ">Or Visit us at :
-                <a href="https://www.instagram.com/x.tanya.r/ "><i class = "fa fa-instagram "></i></a>
+            <div class="col col-lg-4 col-xs-12 col-md-4 col-sm-4 ">
+                <div class="c11 ">
+                    <h2 class="head ">Coffee </h2>
+                    <table align="center ">
+                        <tr>
+                            <td>
+                                <ul class="coffee ">
+                                    <li><span class="item ">Americano </span><span class="rate ">110/-</span></li>
+                                    <li><span class="item ">Cappucino </span><span class="rate ">120/-</span></li>
+                                    <li><span class="item ">Espresso </span><span class="rate ">100/-</span></li>
+                                    <li><span class="item ">Cafe Macchiato </span><span class="rate ">150/-</span></li>
+                                    <li><span class="item ">Cold Brew Coffee </span><span class="rate ">250/-</span></li>
+                                    <li><span class="item ">Latte </span><span class="rate ">100/-</span></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-        </h3>
+        </div>
     </div>
 </body>
 
